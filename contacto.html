@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario de contacto - Críticas al Respawn">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="logo-invert.png">
+    <title>Contacto - Críticas al Respawn</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo-invert.png" alt="Criticas al Respawn" class="logo-img">
+                <span class="logo-text">Críticas al Respawn</span>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="index.html#reseñas" class="nav-link">Reseñas</a></li>
+                <li><a href="index.html#noticias" class="nav-link">Noticias</a></li>
+                <li><a href="index.html#ranking" class="nav-link">Ranking</a></li>
+                <li><a href="contacto.html" class="nav-link active">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Contenido principal -->
+    <main class="main-content">
+        <!-- Sección de contacto -->
+        <section class="section">
+            <h1>Contacto</h1>
+            <p>¿Tienes alguna pregunta, sugerencia o quieres colaborar con nosotros? ¡Escríbenos!</p>
+            
+            <!-- Información de contacto -->
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>Email</h3>
+                    <p>contacto@criticasalrespawn.com</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Redes Sociales</h3>
+                    <p>@CriticasAlRespawn</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Discord</h3>
+                    <p>CriticasAlRespawn#1234</p>
+                </div>
+            </div>
+
+            <!-- Formulario de contacto -->
+            <div class="contact-form-container">
+                <h2>Envíanos un mensaje</h2>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="asunto">Asunto:</label>
+                        <select id="asunto" name="asunto" required>
+                            <option value="">Selecciona un asunto</option>
+                            <option value="reseña">Solicitar reseña</option>
+                            <option value="colaboracion">Colaboración</option>
+                            <option value="sugerencia">Sugerencia</option>
+                            <option value="reporte">Reportar problema</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="6" required placeholder="Escribe tu mensaje aquí..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                </form>
+                
+                <div id="mensajeEnviado" class="mensaje-enviado" style="display: none;">
+                    <p>¡Mensaje enviado correctamente! Te responderemos pronto.</p>
+                </div>
+            </div>
+
+            <!-- Información adicional -->
+            <div class="contact-extra">
+                <h3>¿Por qué contactarnos?</h3>
+                <div class="contact-reasons">
+                    <div class="reason-item">
+                        <h4>Solicitar Reseña</h4>
+                        <p>¿Tienes un juego que te gustaría que reseñemos? Cuéntanos sobre él.</p>
+                    </div>
+                    <div class="reason-item">
+                        <h4>Colaboración</h4>
+                        <p>¿Eres desarrollador o tienes un proyecto interesante? Hablemos.</p>
+                    </div>
+                    <div class="reason-item">
+                        <h4>Sugerencias</h4>
+                        <p>¿Cómo podemos mejorar nuestro contenido? Tu opinión es importante.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Críticas al Respawn</h3>
+                <p>Tu fuente confiable de reseñas de videojuegos. Descubre los mejores juegos y mantente al día con las últimas noticias del mundo gaming.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html#reseñas">Reseñas</a></li>
+                    <li><a href="index.html#noticias">Noticias</a></li>
+                    <li><a href="index.html#ranking">Ranking</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Redes Sociales</h4>
+                <div class="social-links">
+                    <a href="#" class="social-link">Email</a>
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">Facebook</a>
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">Discord</a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <p>contacto@criticasalrespawn.com</p>
+                <p>CriticasAlRespawn#1234</p>
+                <p>@CriticasAlRespawn</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Críticas al Respawn. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
