@@ -1,15 +1,4 @@
 
-/*
-    DOCUMENTACIÓN DE REQUERIMIENTOS IMPLEMENTADOS:
-    
-    ✅ CSS: Estilos completos para el sitio web
-    ✅ Responsive: Diseño adaptable a diferentes dispositivos
-    ✅ Formulario: Estilos para formulario de contacto (líneas 380-410)
-    ✅ Navegación: Estilos para barra de navegación y logo (líneas 34-62)
-    ✅ Layout: Estructura visual con flexbox y grid
-    ✅ Tipografía: Estilos para todas las etiquetas HTML implementadas
-*/
-
 /* ===== CONFIGURACIÓN INICIAL ===== */
 /* Esto quita los espacios que vienen por defecto en todos los elementos */
 * {
