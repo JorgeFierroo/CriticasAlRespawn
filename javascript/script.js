@@ -1,3 +1,4 @@
+
 // ===== NAVEGACIÓN SIMPLE =====
 document.addEventListener('DOMContentLoaded', function() {
     // Navegación suave para enlaces internos

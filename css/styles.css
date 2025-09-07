@@ -1,4 +1,15 @@
 
+/*
+    DOCUMENTACIÓN DE REQUERIMIENTOS IMPLEMENTADOS:
+    
+    ✅ CSS: Estilos completos para el sitio web
+    ✅ Responsive: Diseño adaptable a diferentes dispositivos
+    ✅ Formulario: Estilos para formulario de contacto (líneas 380-410)
+    ✅ Navegación: Estilos para barra de navegación y logo (líneas 34-62)
+    ✅ Layout: Estructura visual con flexbox y grid
+    ✅ Tipografía: Estilos para todas las etiquetas HTML implementadas
+*/
+
 /* ===== CONFIGURACIÓN INICIAL ===== */
 /* Esto quita los espacios que vienen por defecto en todos los elementos */
 * {
@@ -39,17 +50,26 @@ body {
     gap: 10px; /* Espacio entre imagen y texto */
 }
 
+/* El figure del logo */
+.nav-logo figure {
+    display: flex; /* Pone imagen y texto en línea */
+    align-items: center; /* Los centra verticalmente */
+    gap: 10px; /* Espacio entre imagen y texto */
+    margin: 0; /* Quita margen por defecto */
+}
+
 /* La imagen del logo */
 .logo-img {
     height: 35px; /* Altura de la imagen */
     width: auto; /* Ancho automático */
 }
 
-/* El texto del logo */
+/* El texto del logo (figcaption) */
 .logo-text {
     font-size: 1.3rem; /* Tamaño de la letra */
     font-weight: bold; /* Texto en negrita */
     color: #F6D60D; /* Color amarillo */
+    margin: 0; /* Quita margen por defecto del figcaption */
 }
 
 /* ===== MENÚ ===== */

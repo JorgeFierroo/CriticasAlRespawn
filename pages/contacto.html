@@ -3,35 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Formulario de contacto - Críticas al Respawn">
+    <meta name="description" content="Formulario de contacto - Críticas al Respawn. Envíanos tus sugerencias, solicita reseñas o colabora con nosotros.">
+    <meta name="keywords" content="contacto, formulario, sugerencias, reseñas, colaboración, gaming">
+    <meta name="author" content="Críticas al Respawn">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Contacto - Críticas al Respawn">
+    <meta property="og:description" content="Formulario de contacto para sugerencias, solicitudes de reseñas y colaboraciones.">
+    <meta property="og:type" content="website">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" type="image/png" href="../images/logo-invert.png">
-    <title>Contacto - Críticas al Respawn</title>
+    <title>Contacto - Críticas al Respawn | Formulario de Contacto</title>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <img src="../images/logo-invert.png" alt="Criticas al Respawn" class="logo-img">
-                <span class="logo-text">Críticas al Respawn</span>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <figure>
+                        <img src="../images/logo-invert.png" alt="Criticas al Respawn" class="logo-img">
+                        <figcaption class="logo-text">Críticas al Respawn</figcaption>
+                    </figure>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="index.html#reseñas" class="nav-link">Reseñas</a></li>
+                    <li><a href="index.html#noticias" class="nav-link">Noticias</a></li>
+                    <li><a href="index.html#ranking" class="nav-link">Ranking</a></li>
+                    <li><a href="contacto.html" class="nav-link active">Contacto</a></li>
+                </ul>
             </div>
-            
-            <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">Inicio</a></li>
-                <li><a href="index.html#reseñas" class="nav-link">Reseñas</a></li>
-                <li><a href="index.html#noticias" class="nav-link">Noticias</a></li>
-                <li><a href="index.html#ranking" class="nav-link">Ranking</a></li>
-                <li><a href="contacto.html" class="nav-link active">Contacto</a></li>
-            </ul>
-        </div>
-    </nav>
+        </nav>
+    </header>
     
     <!-- Contenido principal -->
     <main class="main-content">
         <!-- Sección de contacto -->
         <section class="section">
-            <h1>Contacto</h1>
-            <p>¿Tienes alguna pregunta, sugerencia o quieres colaborar con nosotros? ¡Escríbenos!</p>
+            <h1><b>Contacto</b></h1>
+            <p>¿Tienes alguna <i>pregunta</i>, <i>sugerencia</i> o quieres colaborar con nosotros?<br>
+            ¡Escríbenos!</p>
             
             <!-- Información de contacto -->
             <div class="contact-info">
@@ -49,10 +60,12 @@
                 </div>
             </div>
 
-            <!-- Formulario de contacto -->
+            <!-- REQUERIMIENTO: Formulario de contacto -->
             <div class="contact-form-container">
                 <h2>Envíanos un mensaje</h2>
+                <!-- REQUERIMIENTO: Etiqueta <form> con validación HTML5 -->
                 <form id="contactForm" class="contact-form">
+                    <!-- REQUERIMIENTO: Campos del formulario con validación HTML5 (required) -->
                     <div class="form-group">
                         <label for="nombre">Nombre:</label>
                         <input type="text" id="nombre" name="nombre" required>
@@ -148,7 +161,7 @@
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2024 Críticas al Respawn. Todos los derechos reservados.</p>
+            <p>&copy; 2025 Críticas al Respawn. Todos los derechos reservados.</p>
         </div>
     </footer>
     

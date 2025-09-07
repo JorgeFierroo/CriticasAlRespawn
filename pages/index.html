@@ -4,59 +4,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="pagina de reseña de videojuegos">
+    <meta name="description"
+        content="Críticas al Respawn - Tu fuente confiable de reseñas de videojuegos. Descubre los mejores juegos, noticias gaming y rankings actualizados.">
+    <meta name="keywords" content="reseñas videojuegos, gaming, noticias juegos, ranking videojuegos, críticas juegos">
+    <meta name="author" content="Críticas al Respawn">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Críticas al Respawn - Reseñas de Videojuegos">
+    <meta property="og:description"
+        content="Tu fuente confiable de reseñas de videojuegos. Descubre los mejores juegos y mantente al día con las últimas noticias del mundo gaming.">
+    <meta property="og:type" content="website">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" type="image/png" href="../images/logo-invert.png">
-    <title>Criticas al Respawn</title>
+    <title>Críticas al Respawn - Reseñas de Videojuegos | Gaming News</title>
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <img src="../images/logo-invert.png" alt="Criticas al Respawn" class="logo-img">
-                <span class="logo-text">Críticas al Respawn</span>
+    <!-- REQUERIMIENTO: Etiquetas semánticas <header> y <nav> -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <!-- REQUERIMIENTO: Etiquetas semánticas <figure> y <figcaption> -->
+                    <figure>
+                        <img src="../images/logo-invert.png" alt="Criticas al Respawn" class="logo-img">
+                        <figcaption class="logo-text">Críticas al Respawn</figcaption>
+                    </figure>
+                </div>
+
+                <ul class="nav-menu">
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#reseñas" class="nav-link">Reseñas</a></li>
+                    <li><a href="#noticias" class="nav-link">Noticias</a></li>
+                    <li><a href="#ranking" class="nav-link">Ranking</a></li>
+                    <li><a href="../pages/contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
             </div>
+        </nav>
+    </header>
 
-            <ul class="nav-menu">
-                <li><a href="#inicio" class="nav-link">Inicio</a></li>
-                <li><a href="#reseñas" class="nav-link">Reseñas</a></li>
-                <li><a href="#noticias" class="nav-link">Noticias</a></li>
-                <li><a href="#ranking" class="nav-link">Ranking</a></li>
-                <li><a href="../pages/contacto.html" class="nav-link">Contacto</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Contenido principal -->
+    <!-- REQUERIMIENTO: Etiqueta semántica <main> -->
     <main class="main-content">
-        <!-- Sección Inicio -->
+        <!-- REQUERIMIENTO: Etiqueta semántica <section> -->
         <section id="inicio" class="section">
-            <h1>Bienvenido a Críticas al Respawn</h1>
-            <p>Tu fuente confiable de reseñas de videojuegos</p>
+            <!-- REQUERIMIENTO: Etiquetas <h1>, <p>, <b>, <i>, <br> -->
+            <h1>Bienvenido a <b>Críticas al Respawn</b></h1>
+            <p>Tu fuente <i>confiable</i> de reseñas de videojuegos<br>
+                Descubre los mejores títulos y mantente actualizado con las últimas novedades del mundo gaming.</p>
         </section>
 
         <!-- Sección Reseñas -->
         <section id="reseñas" class="section">
             <h2>Últimas Reseñas</h2>
             <div class="review-grid">
-                <div class="review-card">
-                    <h3>Cyberpunk 2077</h3>
-                    <p>Un mundo abierto impresionante con una narrativa envolvente.</p>
+                <!-- REQUERIMIENTO: Etiqueta semántica <article> -->
+                <article class="review-card">
+                    <h3><b>Cyberpunk 2077</b></h3>
+                    <p>Un mundo abierto <i>impresionante</i> con una narrativa envolvente.</p>
                     <div class="rating">★★★★☆</div>
-                </div>
-                <div class="review-card">
-                    <h3>Elden Ring</h3>
-                    <p>Una obra maestra de FromSoftware que redefine el género souls.</p>
+                </article>
+                <article class="review-card">
+                    <h3><b>Elden Ring</b></h3>
+                    <p>Una <i>obra maestra</i> de FromSoftware que redefine el género souls.</p>
                     <div class="rating">★★★★★</div>
-                </div>
-                <div class="review-card">
-                    <h3>God of War Ragnarök</h3>
-                    <p>Una secuela épica que supera todas las expectativas.</p>
+                </article>
+                <article class="review-card">
+                    <h3><b>God of War Ragnarök</b></h3>
+                    <p>Una secuela <i>épica</i> que supera todas las expectativas.</p>
                     <div class="rating">★★★★★</div>
-                </div>
+                </article>
             </div>
             <h3 style="margin-top:32px;">¿Cómo enviar tu propia reseña?</h3>
+            <!-- REQUERIMIENTO: Etiquetas <ol> y <li> -->
             <ol style="max-width:500px;margin:16px auto 0 auto;text-align:left;">
                 <li>Ingresa a la sección de contacto.</li>
                 <li>Completa el formulario con tus datos y tu reseña.</li>
@@ -69,189 +87,193 @@
         <section id="noticias" class="section">
             <h2>Noticias Gaming</h2>
             <div class="news-list">
-                <div class="news-item">
-                    <h3>Nuevo trailer de The Legend of Zelda: Tears of the Kingdom</h3>
-                    <p>Nintendo revela nuevas mecánicas y detalles del próximo juego.</p>
-                    <span class="date">15 de Marzo, 2024</span>
-                </div>
-                <div class="news-item">
-                    <h3>PlayStation 5 Pro confirmado para 2024</h3>
-                    <p>Sony anuncia oficialmente la nueva consola con mejoras significativas.</p>
-                    <span class="date">12 de Marzo, 2024</span>
-                </div>
-                <div class="news-item">
-                    <h3>Xbox Game Pass añade 10 nuevos juegos</h3>
-                    <p>Microsoft expande su catálogo con títulos indie y AAA.</p>
-                    <span class="date">10 de Marzo, 2024</span>
-                </div>
+                <article class="news-item">
+                    <h3><b>Nuevo trailer de The Legend of Zelda: Tears of the Kingdom</b></h3>
+                    <p>Nintendo revela <i>nuevas mecánicas</i> y detalles del próximo juego.</p>
+                    <time class="date">15 de Marzo, 2024</time>
+                </article>
+                <article class="news-item">
+                    <h3><b>PlayStation 5 Pro confirmado para 2024</b></h3>
+                    <p>Sony anuncia <i>oficialmente</i> la nueva consola con mejoras significativas.</p>
+                    <time class="date">12 de Marzo, 2024</time>
+                </article>
+                <article class="news-item">
+                    <h3><b>Xbox Game Pass añade 10 nuevos juegos</b></h3>
+                    <p>Microsoft expande su catálogo con títulos <i>indie</i> y <i>AAA</i>.</p>
+                    <time class="date">10 de Marzo, 2024</time>
+                </article>
             </div>
-    </section>
+        </section>
 
-    <hr style="margin: 40px 0; border: none; border-top: 2px solid #A08AC0; width: 80%;">
+        <!-- REQUERIMIENTO: Etiqueta <hr> -->
+        <hr style="margin: 40px auto; border: none; border-top: 2px solid #A08AC0; width: 80%;">
         </section>
 
         <!-- Sección Ranking -->
         <section id="ranking" class="section">
             <h2>Top 10 Juegos por Categoría 2024</h2>
             <div style="overflow-x:auto;">
-            <table class="comparative-table" border="1" cellpadding="6" cellspacing="0" style="width:100%; background:#fff; border-radius:10px; border-collapse:collapse;">
-                <thead style="background:#2d2573; color:#fff;">
-                    <tr>
-                        <th>Puesto</th>
-                        <th>RPG</th>
-                        <th>Acción</th>
-                        <th>Aventura</th>
-                        <th>Deportes</th>
-                        <th>Carreras</th>
-                        <th>Estrategia</th>
-                        <th>Simulación</th>
-                        <th>Indie</th>
-                        <th>Horror</th>
-                        <th>Multijugador</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Baldur's Gate 3 (9.5)</td>
-                        <td>Spider-Man 2 (9.4)</td>
-                        <td>The Legend of Zelda: TotK (9.7)</td>
-                        <td>FIFA 25 (9.1)</td>
-                        <td>Forza Motorsport (9.3)</td>
-                        <td>Age of Empires IV (9.2)</td>
-                        <td>The Sims 5 (9.0)</td>
-                        <td>Hollow Knight: Silksong (9.6)</td>
-                        <td>Alan Wake 2 (9.2)</td>
-                        <td>Call of Duty: MW3 (9.0)</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Starfield (9.3)</td>
-                        <td>God of War Ragnarök (9.3)</td>
-                        <td>Uncharted: Legacy (9.4)</td>
-                        <td>NBA 2K25 (9.0)</td>
-                        <td>Gran Turismo 8 (9.1)</td>
-                        <td>Civilization VII (9.0)</td>
-                        <td>Flight Simulator 2024 (8.9)</td>
-                        <td>Celeste 2 (9.4)</td>
-                        <td>Resident Evil 9 (9.1)</td>
-                        <td>Fortnite (8.9)</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Hogwarts Legacy (9.0)</td>
-                        <td>Devil May Cry 6 (9.0)</td>
-                        <td>Life is Strange 3 (9.2)</td>
-                        <td>eFootball 2025 (8.8)</td>
-                        <td>Mario Kart 9 (9.0)</td>
-                        <td>Starcraft III (8.9)</td>
-                        <td>Planet Zoo 2 (8.8)</td>
-                        <td>Stardew Valley 2 (9.2)</td>
-                        <td>Silent Hill: Return (8.9)</td>
-                        <td>Apex Legends (8.8)</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Final Fantasy XVI (8.9)</td>
-                        <td>Bayonetta 4 (8.8)</td>
-                        <td>Assassin's Creed Mirage (9.0)</td>
-                        <td>Madden NFL 25 (8.7)</td>
-                        <td>F1 2025 (8.9)</td>
-                        <td>Total War: Pharaoh (8.8)</td>
-                        <td>SimCity Next (8.7)</td>
-                        <td>Undertale 2 (9.0)</td>
-                        <td>Outlast Trials (8.8)</td>
-                        <td>Valorant (8.7)</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Persona 6 (8.8)</td>
-                        <td>Batman: Gotham Knights (8.7)</td>
-                        <td>Ori and the Will 2 (8.9)</td>
-                        <td>PES 2025 (8.6)</td>
-                        <td>Need for Speed: Heat 2 (8.8)</td>
-                        <td>Fire Emblem: Echoes (8.7)</td>
-                        <td>Farming Simulator 24 (8.6)</td>
-                        <td>Dead Cells: Reborn (8.8)</td>
-                        <td>Amnesia: The Bunker (8.7)</td>
-                        <td>Overwatch 2 (8.6)</td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td>Dragon Quest XII (8.7)</td>
-                        <td>Star Wars Jedi: Survivor (8.6)</td>
-                        <td>Firewatch 2 (8.8)</td>
-                        <td>MLB The Show 25 (8.5)</td>
-                        <td>WRC 2025 (8.7)</td>
-                        <td>Warhammer 40K: Tacticus (8.6)</td>
-                        <td>SimAirport 2 (8.5)</td>
-                        <td>Hades II (8.7)</td>
-                        <td>Phasmophobia (8.6)</td>
-                        <td>Rocket League (8.5)</td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td>Octopath Traveler II (8.6)</td>
-                        <td>Devil's Third 2 (8.5)</td>
-                        <td>Journey 2 (8.7)</td>
-                        <td>WWE 2K25 (8.4)</td>
-                        <td>Trackmania Turbo 2 (8.6)</td>
-                        <td>Advance Wars: Reboot (8.5)</td>
-                        <td>House Flipper 2 (8.4)</td>
-                        <td>Blasphemous II (8.6)</td>
-                        <td>Dead Space Remake (8.5)</td>
-                        <td>Splatoon 3 (8.4)</td>
-                    </tr>
-                    <tr>
-                        <td>8</td>
-                        <td>Divinity: Original Sin 3 (8.5)</td>
-                        <td>Ghost of Tsushima 2 (8.4)</td>
-                        <td>Gris 2 (8.6)</td>
-                        <td>FIFA Street 2025 (8.3)</td>
-                        <td>Burnout Paradise 2 (8.5)</td>
-                        <td>Company of Heroes 4 (8.4)</td>
-                        <td>SimCity BuildIt (8.3)</td>
-                        <td>Hyper Light Breaker (8.5)</td>
-                        <td>Little Nightmares III (8.4)</td>
-                        <td>Destiny 3 (8.3)</td>
-                    </tr>
-                    <tr>
-                        <td>9</td>
-                        <td>Mass Effect 5 (8.4)</td>
-                        <td>Infamous: Reborn (8.3)</td>
-                        <td>Brothers: A Tale 2 (8.5)</td>
-                        <td>NBA Live 25 (8.2)</td>
-                        <td>Crash Team Racing Nitro 2 (8.4)</td>
-                        <td>Anno 2206 (8.3)</td>
-                        <td>RollerCoaster Tycoon Next (8.2)</td>
-                        <td>Katana Zero 2 (8.4)</td>
-                        <td>Layers of Fear 3 (8.3)</td>
-                        <td>Palworld (8.2)</td>
-                    </tr>
-                    <tr>
-                        <td>10</td>
-                        <td>Wasteland 4 (8.3)</td>
-                        <td>Sunset Overdrive 2 (8.2)</td>
-                        <td>Oxenfree II (8.4)</td>
-                        <td>Mario Strikers 2025 (8.1)</td>
-                        <td>Hot Wheels Unleashed 2 (8.3)</td>
-                        <td>Desperados IV (8.2)</td>
-                        <td>SimFarm 2 (8.1)</td>
-                        <td>Dead Cells: Legacy (8.3)</td>
-                        <td>Until Dawn 2 (8.2)</td>
-                        <td>Among Us 2 (8.1)</td>
-                    </tr>
-                </tbody>
-            </table>
+                <!-- REQUERIMIENTO: Etiqueta <table> (tabla de rankings) -->
+                <table class="comparative-table" border="1" cellpadding="6" cellspacing="0"
+                    style="width:100%; background:#fff; border-radius:10px; border-collapse:collapse;">
+                    <thead style="background:#2d2573; color:#fff;">
+                        <tr>
+                            <th>Puesto</th>
+                            <th>RPG</th>
+                            <th>Acción</th>
+                            <th>Aventura</th>
+                            <th>Deportes</th>
+                            <th>Carreras</th>
+                            <th>Estrategia</th>
+                            <th>Simulación</th>
+                            <th>Indie</th>
+                            <th>Horror</th>
+                            <th>Multijugador</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Baldur's Gate 3 (9.5)</td>
+                            <td>Spider-Man 2 (9.4)</td>
+                            <td>The Legend of Zelda: TotK (9.7)</td>
+                            <td>FIFA 25 (9.1)</td>
+                            <td>Forza Motorsport (9.3)</td>
+                            <td>Age of Empires IV (9.2)</td>
+                            <td>The Sims 5 (9.0)</td>
+                            <td>Hollow Knight: Silksong (9.6)</td>
+                            <td>Alan Wake 2 (9.2)</td>
+                            <td>Call of Duty: MW3 (9.0)</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Starfield (9.3)</td>
+                            <td>God of War Ragnarök (9.3)</td>
+                            <td>Uncharted: Legacy (9.4)</td>
+                            <td>NBA 2K25 (9.0)</td>
+                            <td>Gran Turismo 8 (9.1)</td>
+                            <td>Civilization VII (9.0)</td>
+                            <td>Flight Simulator 2024 (8.9)</td>
+                            <td>Celeste 2 (9.4)</td>
+                            <td>Resident Evil 9 (9.1)</td>
+                            <td>Fortnite (8.9)</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Hogwarts Legacy (9.0)</td>
+                            <td>Devil May Cry 6 (9.0)</td>
+                            <td>Life is Strange 3 (9.2)</td>
+                            <td>eFootball 2025 (8.8)</td>
+                            <td>Mario Kart 9 (9.0)</td>
+                            <td>Starcraft III (8.9)</td>
+                            <td>Planet Zoo 2 (8.8)</td>
+                            <td>Stardew Valley 2 (9.2)</td>
+                            <td>Silent Hill: Return (8.9)</td>
+                            <td>Apex Legends (8.8)</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Final Fantasy XVI (8.9)</td>
+                            <td>Bayonetta 4 (8.8)</td>
+                            <td>Assassin's Creed Mirage (9.0)</td>
+                            <td>Madden NFL 25 (8.7)</td>
+                            <td>F1 2025 (8.9)</td>
+                            <td>Total War: Pharaoh (8.8)</td>
+                            <td>SimCity Next (8.7)</td>
+                            <td>Undertale 2 (9.0)</td>
+                            <td>Outlast Trials (8.8)</td>
+                            <td>Valorant (8.7)</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Persona 6 (8.8)</td>
+                            <td>Batman: Gotham Knights (8.7)</td>
+                            <td>Ori and the Will 2 (8.9)</td>
+                            <td>PES 2025 (8.6)</td>
+                            <td>Need for Speed: Heat 2 (8.8)</td>
+                            <td>Fire Emblem: Echoes (8.7)</td>
+                            <td>Farming Simulator 24 (8.6)</td>
+                            <td>Dead Cells: Reborn (8.8)</td>
+                            <td>Amnesia: The Bunker (8.7)</td>
+                            <td>Overwatch 2 (8.6)</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Dragon Quest XII (8.7)</td>
+                            <td>Star Wars Jedi: Survivor (8.6)</td>
+                            <td>Firewatch 2 (8.8)</td>
+                            <td>MLB The Show 25 (8.5)</td>
+                            <td>WRC 2025 (8.7)</td>
+                            <td>Warhammer 40K: Tacticus (8.6)</td>
+                            <td>SimAirport 2 (8.5)</td>
+                            <td>Hades II (8.7)</td>
+                            <td>Phasmophobia (8.6)</td>
+                            <td>Rocket League (8.5)</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Octopath Traveler II (8.6)</td>
+                            <td>Devil's Third 2 (8.5)</td>
+                            <td>Journey 2 (8.7)</td>
+                            <td>WWE 2K25 (8.4)</td>
+                            <td>Trackmania Turbo 2 (8.6)</td>
+                            <td>Advance Wars: Reboot (8.5)</td>
+                            <td>House Flipper 2 (8.4)</td>
+                            <td>Blasphemous II (8.6)</td>
+                            <td>Dead Space Remake (8.5)</td>
+                            <td>Splatoon 3 (8.4)</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Divinity: Original Sin 3 (8.5)</td>
+                            <td>Ghost of Tsushima 2 (8.4)</td>
+                            <td>Gris 2 (8.6)</td>
+                            <td>FIFA Street 2025 (8.3)</td>
+                            <td>Burnout Paradise 2 (8.5)</td>
+                            <td>Company of Heroes 4 (8.4)</td>
+                            <td>SimCity BuildIt (8.3)</td>
+                            <td>Hyper Light Breaker (8.5)</td>
+                            <td>Little Nightmares III (8.4)</td>
+                            <td>Destiny 3 (8.3)</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Mass Effect 5 (8.4)</td>
+                            <td>Infamous: Reborn (8.3)</td>
+                            <td>Brothers: A Tale 2 (8.5)</td>
+                            <td>NBA Live 25 (8.2)</td>
+                            <td>Crash Team Racing Nitro 2 (8.4)</td>
+                            <td>Anno 2206 (8.3)</td>
+                            <td>RollerCoaster Tycoon Next (8.2)</td>
+                            <td>Katana Zero 2 (8.4)</td>
+                            <td>Layers of Fear 3 (8.3)</td>
+                            <td>Palworld (8.2)</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Wasteland 4 (8.3)</td>
+                            <td>Sunset Overdrive 2 (8.2)</td>
+                            <td>Oxenfree II (8.4)</td>
+                            <td>Mario Strikers 2025 (8.1)</td>
+                            <td>Hot Wheels Unleashed 2 (8.3)</td>
+                            <td>Desperados IV (8.2)</td>
+                            <td>SimFarm 2 (8.1)</td>
+                            <td>Dead Cells: Legacy (8.3)</td>
+                            <td>Until Dawn 2 (8.2)</td>
+                            <td>Among Us 2 (8.1)</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-            <p style="margin-top:10px; font-size:0.95em; color:#555;">*Datos ficticios y categorías de ejemplo para fines comparativos.</p>
+            <p style="margin-top:10px; font-size:0.95em; color:#555;">*Datos ficticios y categorías de ejemplo para
+                fines comparativos.</p>
         </section>
 
         <!-- Sección Contacto -->
         <section id="contacto" class="section">
             <h2>Contacto</h2>
             <p>¿Quieres ponerte en contacto con nosotros? Visita nuestra página de contacto.</p>
-            
+
             <!-- Información de contacto -->
             <div class="contact-info">
                 <div class="contact-item">
@@ -274,15 +296,16 @@
             </div>
         </section>
     </main>
-    
-    <!-- Footer -->
+
+    <!-- REQUERIMIENTO: Etiqueta semántica <footer> -->
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-section">
                 <h3>Críticas al Respawn</h3>
-                <p>Tu fuente confiable de reseñas de videojuegos. Descubre los mejores juegos y mantente al día con las últimas noticias del mundo gaming.</p>
+                <p>Tu fuente confiable de reseñas de videojuegos. Descubre los mejores juegos y mantente al día con las
+                    últimas noticias del mundo gaming.</p>
             </div>
-            
+
             <div class="footer-section">
                 <h4>Enlaces Rápidos</h4>
                 <ul>
@@ -293,7 +316,7 @@
                     <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
-            
+
             <div class="footer-section">
                 <h4>Redes Sociales</h4>
                 <div class="social-links">
@@ -304,7 +327,7 @@
                     <a href="#" class="social-link">Discord</a>
                 </div>
             </div>
-            
+
             <div class="footer-section">
                 <h4>Contacto</h4>
                 <p>contacto@criticasalrespawn.com</p>
@@ -312,7 +335,7 @@
                 <p>@CriticasAlRespawn</p>
             </div>
         </div>
-        
+
         <div class="footer-bottom">
             <p>&copy; 2025 Críticas al Respawn. Todos los derechos reservados.</p>
         </div>
