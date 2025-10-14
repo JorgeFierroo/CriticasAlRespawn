@@ -15,22 +15,22 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // ===== EVENTO 1: FORMULARIO DE CONTACTO =====
-    const contactForm = document.getElementById('contactForm');
+    const formularioContacto = document.getElementById('formularioContacto');
     
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
+    if (formularioContacto) {
+        formularioContacto.addEventListener('submit', function(e) {
             e.preventDefault(); // Evita que se envíe el formulario
             
             // Muestra mensaje simple
             alert('¡Mensaje enviado! Te responderemos pronto.');
             
             // Limpia el formulario
-            contactForm.reset();
+            formularioContacto.reset();
         });
     }
 
     // ===== EVENTO 2: CAMBIO DE COLOR EN BOTONES =====
-    const botones = document.querySelectorAll('.submit-btn, .contact-btn');
+    const botones = document.querySelectorAll('.boton-enviar, .boton-contacto');
     
     botones.forEach(boton => {
         // Cuando pasas el mouse por encima

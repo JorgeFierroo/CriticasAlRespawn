@@ -1,260 +1,369 @@
-
 /* ===== CONFIGURACIÓN INICIAL ===== */
 /* Esto quita los espacios que vienen por defecto en todos los elementos */
 * {
-    margin: 0; /* Quita espacios externos */
-    padding: 0; /* Quita espacios internos */
-    box-sizing: border-box; /* Hace que el ancho incluya el padding */
+    margin: 0;
+    /* Quita espacios externos */
+    padding: 0;
+    /* Quita espacios internos */
+    box-sizing: border-box;
+    /* Hace que el ancho incluya el padding */
 }
 
 /* Configuración de toda la página */
 body {
-    font-family: Arial, sans-serif; /* Tipo de letra */
-    color: #333; /* Color del texto */
-    background: #f5f5f5; /* Color de fondo */
+    font-family: Arial, sans-serif;
+    /* Tipo de letra */
+    color: #333;
+    /* Color del texto */
+    background: #f5f5f5;
+    /* Color de fondo */
 }
 
 /* ===== BARRA DE NAVEGACIÓN ===== */
 /* La barra de navegación de arriba */
-.navbar {
-    background: #3a2d71; /* Color de fondo morado */
-    padding: 15px 0; /* Espacio arriba y abajo */
+.barra-navegacion {
+    background: #3a2d71;
+    /* Color de fondo morado */
+    padding: 15px 0;
+    /* Espacio arriba y abajo */
 }
 
 /* El contenedor que tiene el logo y el menú */
-.nav-container {
-    max-width: 1200px; /* Ancho máximo */
-    margin: 0 auto; /* Centra todo */
-    padding: 0 20px; /* Espacio a los lados */
-    display: flex; /* Pone elementos en línea */
-    justify-content: space-between; /* Logo a la izquierda, menú a la derecha */
-    align-items: center; /* Centra verticalmente */
+.contenedor-nav {
+    max-width: 1200px;
+    /* Ancho máximo */
+    margin: 0 auto;
+    /* Centra todo */
+    padding: 0 20px;
+    /* Espacio a los lados */
+    display: flex;
+    /* Pone elementos en línea */
+    justify-content: space-between;
+    /* Logo a la izquierda, menú a la derecha */
+    align-items: center;
+    /* Centra verticalmente */
 }
 
 /* ===== LOGO ===== */
 /* El contenedor del logo (imagen + texto) */
-.nav-logo {
-    display: flex; /* Pone imagen y texto en línea */
-    align-items: center; /* Los centra verticalmente */
-    gap: 10px; /* Espacio entre imagen y texto */
+.logo-nav {
+    display: flex;
+    /* Pone imagen y texto en línea */
+    align-items: center;
+    /* Los centra verticalmente */
+    gap: 10px;
+    /* Espacio entre imagen y texto */
 }
 
 /* El figure del logo */
-.nav-logo figure {
-    display: flex; /* Pone imagen y texto en línea */
-    align-items: center; /* Los centra verticalmente */
-    gap: 10px; /* Espacio entre imagen y texto */
-    margin: 0; /* Quita margen por defecto */
+.logo-nav figure {
+    display: flex;
+    /* Pone imagen y texto en línea */
+    align-items: center;
+    /* Los centra verticalmente */
+    gap: 10px;
+    /* Espacio entre imagen y texto */
+    margin: 0;
+    /* Quita margen por defecto */
 }
 
 /* La imagen del logo */
-.logo-img {
-    height: 35px; /* Altura de la imagen */
-    width: auto; /* Ancho automático */
+.imagen-logo {
+    height: 35px;
+    /* Altura de la imagen */
+    width: auto;
+    /* Ancho automático */
 }
 
 /* El texto del logo (figcaption) */
-.logo-text {
-    font-size: 1.3rem; /* Tamaño de la letra */
-    font-weight: bold; /* Texto en negrita */
-    color: #F6D60D; /* Color amarillo */
-    margin: 0; /* Quita margen por defecto del figcaption */
+.texto-logo {
+    font-size: 1.3rem;
+    /* Tamaño de la letra */
+    font-weight: bold;
+    /* Texto en negrita */
+    color: #F6D60D;
+    /* Color amarillo */
+    margin: 0;
+    /* Quita margen por defecto del figcaption */
 }
 
 /* ===== MENÚ ===== */
 /* La lista de enlaces del menú */
-.nav-menu {
-    display: flex; /* Pone los enlaces en línea */
-    list-style: none; /* Quita las viñetas de la lista */
-    gap: 25px; /* Espacio entre cada enlace */
+.menu-nav {
+    display: flex;
+    /* Pone los enlaces en línea */
+    list-style: none;
+    /* Quita las viñetas de la lista */
+    gap: 25px;
+    /* Espacio entre cada enlace */
 }
 
 /* Cada enlace del menú */
-.nav-link {
-    color: white; /* Color del texto */
-    text-decoration: none; /* Quita el subrayado */
-    padding: 8px 15px; /* Espacio interno */
-    border-radius: 5px; /* Esquinas redondeadas */
-    transition: background-color 0.3s; /* Animación suave */
+.enlace-nav {
+    color: white;
+    /* Color del texto */
+    text-decoration: none;
+    /* Quita el subrayado */
+    padding: 8px 15px;
+    /* Espacio interno */
+    border-radius: 5px;
+    /* Esquinas redondeadas */
+    transition: background-color 0.3s;
+    /* Animación suave */
 }
 
 /* Cuando pasas el mouse por encima */
-.nav-link:hover {
-    background: #A08AC0; /* Cambia el color de fondo */
+.enlace-nav:hover {
+    background: #A08AC0;
+    /* Cambia el color de fondo */
 }
 
 /* ===== CONTENIDO PRINCIPAL ===== */
 /* El contenedor de todo el contenido */
-.main-content {
-    padding: 20px; /* Espacio interno */
+.contenido-principal {
+    padding: 20px;
+    /* Espacio interno */
 }
 
 /* Cada sección de la página */
-.section {
-    background: white; /* Fondo blanco */
-    margin-bottom: 30px; /* Espacio entre secciones */
-    padding: 30px; /* Espacio interno */
-    border-radius: 8px; /* Esquinas redondeadas */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra suave */
+.seccion {
+    background: white;
+    /* Fondo blanco */
+    margin-bottom: 30px;
+    /* Espacio entre secciones */
+    padding: 30px;
+    /* Espacio interno */
+    border-radius: 8px;
+    /* Esquinas redondeadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
 }
 
 /* Los títulos grandes (h1) */
-.section h1 {
-    font-size: 2.5rem; /* Tamaño grande */
-    color: #3a2d71; /* Color morado */
-    margin-bottom: 15px; /* Espacio abajo */
-    text-align: center; /* Centrado */
+.seccion h1 {
+    font-size: 2.5rem;
+    /* Tamaño grande */
+    color: #3a2d71;
+    /* Color morado */
+    margin-bottom: 15px;
+    /* Espacio abajo */
+    text-align: center;
+    /* Centrado */
 }
 
 /* Los títulos medianos (h2) */
-.section h2 {
-    font-size: 2rem; /* Tamaño mediano */
-    color: #3a2d71; /* Color morado */
-    margin-bottom: 20px; /* Espacio abajo */
-    text-align: center; /* Centrado */
+.seccion h2 {
+    font-size: 2rem;
+    /* Tamaño mediano */
+    color: #3a2d71;
+    /* Color morado */
+    margin-bottom: 20px;
+    /* Espacio abajo */
+    text-align: center;
+    /* Centrado */
 }
 
 /* Los párrafos */
-.section p {
-    font-size: 1.1rem; /* Tamaño de letra */
-    color: #666; /* Color gris */
-    text-align: center; /* Centrado */
+.seccion p {
+    font-size: 1.1rem;
+    /* Tamaño de letra */
+    color: #666;
+    /* Color gris */
+    text-align: center;
+    /* Centrado */
 }
 
 /* ===== SECCIÓN RESEÑAS ===== */
 /* El grid que organiza las tarjetas de reseñas */
-.review-grid {
-    display: grid; /* Usa grid para organizar */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Columnas que se adaptan */
-    gap: 20px; /* Espacio entre tarjetas */
-    margin-top: 20px; /* Espacio arriba */
+.grilla-reseñas {
+    display: grid;
+    /* Usa grid para organizar */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* Columnas que se adaptan */
+    gap: 20px;
+    /* Espacio entre tarjetas */
+    margin-top: 20px;
+    /* Espacio arriba */
 }
 
 /* Cada tarjeta de reseña */
-.review-card {
-    background: #f8f8f8; /* Fondo gris claro */
-    padding: 20px; /* Espacio interno */
-    border-radius: 5px; /* Esquinas redondeadas */
-    border-left: 4px solid #A08AC0; /* Borde izquierdo morado */
+.tarjeta-reseña {
+    background: #f8f8f8;
+    /* Fondo gris claro */
+    padding: 20px;
+    /* Espacio interno */
+    border-radius: 5px;
+    /* Esquinas redondeadas */
+    border-left: 4px solid #A08AC0;
+    /* Borde izquierdo morado */
 }
 
 /* El título de cada reseña */
-.review-card h3 {
-    color: #3a2d71; /* Color morado */
-    margin-bottom: 10px; /* Espacio abajo */
+.tarjeta-reseña h3 {
+    color: #3a2d71;
+    /* Color morado */
+    margin-bottom: 10px;
+    /* Espacio abajo */
 }
 
 /* La descripción de cada reseña */
-.review-card p {
-    color: #666; /* Color gris */
-    text-align: left; /* Alineado a la izquierda */
-    margin-bottom: 10px; /* Espacio abajo */
+.tarjeta-reseña p {
+    color: #666;
+    /* Color gris */
+    text-align: left;
+    /* Alineado a la izquierda */
+    margin-bottom: 10px;
+    /* Espacio abajo */
 }
 
 /* Las estrellas de calificación */
-.rating {
-    color: #F6D60D; /* Color amarillo */
-    font-size: 1.2rem; /* Tamaño de letra */
+.calificacion {
+    color: #F6D60D;
+    /* Color amarillo */
+    font-size: 1.2rem;
+    /* Tamaño de letra */
 }
 
 /* ===== SECCIÓN NOTICIAS ===== */
 /* La lista de noticias */
-.news-list {
-    margin-top: 20px; /* Espacio arriba */
+.lista-noticias {
+    margin-top: 20px;
+    /* Espacio arriba */
 }
 
 /* Cada noticia individual */
-.news-item {
-    border-bottom: 1px solid #eee; /* Línea separadora abajo */
-    padding: 15px 0; /* Espacio arriba y abajo */
+.elemento-noticia {
+    border-bottom: 1px solid #eee;
+    /* Línea separadora abajo */
+    padding: 15px 0;
+    /* Espacio arriba y abajo */
 }
 
 /* La última noticia no tiene línea abajo */
-.news-item:last-child {
-    border-bottom: none; /* Quita la línea */
+.elemento-noticia:last-child {
+    border-bottom: none;
+    /* Quita la línea */
 }
 
 /* El título de cada noticia */
-.news-item h3 {
-    color: #3a2d71; /* Color morado */
-    margin-bottom: 8px; /* Espacio abajo */
-    font-size: 1.2rem; /* Tamaño de letra */
+.elemento-noticia h3 {
+    color: #3a2d71;
+    /* Color morado */
+    margin-bottom: 8px;
+    /* Espacio abajo */
+    font-size: 1.2rem;
+    /* Tamaño de letra */
 }
 
 /* La descripción de cada noticia */
-.news-item p {
-    color: #666; /* Color gris */
-    text-align: left; /* Alineado a la izquierda */
-    margin-bottom: 5px; /* Espacio abajo */
+.elemento-noticia p {
+    color: #666;
+    /* Color gris */
+    text-align: left;
+    /* Alineado a la izquierda */
+    margin-bottom: 5px;
+    /* Espacio abajo */
 }
 
 /* La fecha de cada noticia */
-.date {
-    color: #A08AC0; /* Color morado claro */
-    font-size: 0.9rem; /* Tamaño pequeño */
+.fecha {
+    color: #A08AC0;
+    /* Color morado claro */
+    font-size: 0.9rem;
+    /* Tamaño pequeño */
 }
 
 /* ===== SECCIÓN RANKING ===== */
 /* La lista del ranking */
 .ranking-list {
-    margin-top: 20px; /* Espacio arriba */
+    margin-top: 20px;
+    /* Espacio arriba */
 }
 
 /* Cada elemento del ranking */
 .ranking-item {
-    display: flex; /* Pone elementos en línea */
-    align-items: center; /* Los centra verticalmente */
-    padding: 15px; /* Espacio interno */
-    background: #f8f8f8; /* Fondo gris claro */
-    margin-bottom: 10px; /* Espacio abajo */
-    border-radius: 5px; /* Esquinas redondeadas */
+    display: flex;
+    /* Pone elementos en línea */
+    align-items: center;
+    /* Los centra verticalmente */
+    padding: 15px;
+    /* Espacio interno */
+    background: #f8f8f8;
+    /* Fondo gris claro */
+    margin-bottom: 10px;
+    /* Espacio abajo */
+    border-radius: 5px;
+    /* Esquinas redondeadas */
 }
 
 /* El número de posición */
 .position {
-    background: #3a2d71; /* Fondo morado */
-    color: white; /* Texto blanco */
-    width: 30px; /* Ancho fijo */
-    height: 30px; /* Alto fijo */
-    border-radius: 50%; /* Forma circular */
-    display: flex; /* Para centrar el número */
-    align-items: center; /* Centra verticalmente */
-    justify-content: center; /* Centra horizontalmente */
-    font-weight: bold; /* Texto en negrita */
-    margin-right: 15px; /* Espacio a la derecha */
+    background: #3a2d71;
+    /* Fondo morado */
+    color: white;
+    /* Texto blanco */
+    width: 30px;
+    /* Ancho fijo */
+    height: 30px;
+    /* Alto fijo */
+    border-radius: 50%;
+    /* Forma circular */
+    display: flex;
+    /* Para centrar el número */
+    align-items: center;
+    /* Centra verticalmente */
+    justify-content: center;
+    /* Centra horizontalmente */
+    font-weight: bold;
+    /* Texto en negrita */
+    margin-right: 15px;
+    /* Espacio a la derecha */
 }
 
 /* La información del juego */
 .game-info {
-    flex: 1; /* Toma todo el espacio disponible */
+    flex: 1;
+    /* Toma todo el espacio disponible */
 }
 
 /* El nombre del juego */
 .game-info h3 {
-    color: #3a2d71; /* Color morado */
-    margin-bottom: 5px; /* Espacio abajo */
-    text-align: left; /* Alineado a la izquierda */
+    color: #3a2d71;
+    /* Color morado */
+    margin-bottom: 5px;
+    /* Espacio abajo */
+    text-align: left;
+    /* Alineado a la izquierda */
 }
 
 /* La descripción del juego */
 .game-info p {
-    color: #666; /* Color gris */
-    text-align: left; /* Alineado a la izquierda */
-    margin: 0; /* Sin espacios */
-    font-size: 0.9rem; /* Tamaño pequeño */
+    color: #666;
+    /* Color gris */
+    text-align: left;
+    /* Alineado a la izquierda */
+    margin: 0;
+    /* Sin espacios */
+    font-size: 0.9rem;
+    /* Tamaño pequeño */
 }
 
 /* La puntuación del juego */
 .score {
-    background: #F6D60D; /* Fondo amarillo */
-    color: #3a2d71; /* Texto morado */
-    padding: 5px 10px; /* Espacio interno */
-    border-radius: 15px; /* Esquinas muy redondeadas */
-    font-weight: bold; /* Texto en negrita */
+    background: #F6D60D;
+    /* Fondo amarillo */
+    color: #3a2d71;
+    /* Texto morado */
+    padding: 5px 10px;
+    /* Espacio interno */
+    border-radius: 15px;
+    /* Esquinas muy redondeadas */
+    font-weight: bold;
+    /* Texto en negrita */
 }
 
 /* ===== TABLA COMPARATIVA DE JUEGOS ===== */
-.comparative-table {
+.tabla-comparativa {
     width: 100%;
     border-collapse: separate;
     border-spacing: 0;
@@ -267,7 +376,7 @@ body {
     table-layout: auto;
 }
 
-.comparative-table thead th {
+.tabla-comparativa thead th {
     background: #2d2573;
     color: #fff;
     font-weight: bold;
@@ -278,7 +387,7 @@ body {
     letter-spacing: 0.5px;
 }
 
-.comparative-table tbody td {
+.tabla-comparativa tbody td {
     padding: 10px 8px;
     text-align: center;
     border-bottom: 1px solid #ececec;
@@ -286,330 +395,470 @@ body {
     transition: background 0.2s;
 }
 
-.comparative-table tbody tr:last-child td {
+.tabla-comparativa tbody tr:last-child td {
     border-bottom: none;
 }
 
-.comparative-table tbody tr:hover {
+.tabla-comparativa tbody tr:hover {
     background: #f6f3ff;
 }
 
-.comparative-table td:first-child, .comparative-table th:first-child {
+.tabla-comparativa td:first-child,
+.tabla-comparativa th:first-child {
     background: #f5f5fa;
     color: #2d2573;
     font-weight: bold;
     border-right: 2px solid #ececec;
 }
 
-.comparative-table td {
+.tabla-comparativa td {
     min-width: 120px;
 }
 
 @media (max-width: 1100px) {
-    .comparative-table th, .comparative-table td {
+
+    .tabla-comparativa th,
+    .tabla-comparativa td {
         font-size: 0.95rem;
         padding: 8px 4px;
     }
-    .comparative-table td {
+
+    .tabla-comparativa td {
         min-width: 90px;
     }
 }
 
 @media (max-width: 800px) {
-    .comparative-table th, .comparative-table td {
+
+    .tabla-comparativa th,
+    .tabla-comparativa td {
         font-size: 0.85rem;
         padding: 6px 2px;
     }
-    .comparative-table td {
+
+    .tabla-comparativa td {
         min-width: 70px;
     }
 }
 
 @media (max-width: 600px) {
-    .comparative-table {
+    .tabla-comparativa {
         font-size: 0.8rem;
     }
-    .comparative-table th, .comparative-table td {
+
+    .tabla-comparativa th,
+    .tabla-comparativa td {
         padding: 4px 1px;
     }
 }
 
 /* ===== SECCIÓN CONTACTO ===== */
 /* El grid de información de contacto */
-.contact-info {
-    display: grid; /* Usa grid para organizar */
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Columnas que se adaptan */
-    gap: 20px; /* Espacio entre elementos */
-    margin-top: 20px; /* Espacio arriba */
+.info-contacto {
+    display: grid;
+    /* Usa grid para organizar */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* Columnas que se adaptan */
+    gap: 20px;
+    /* Espacio entre elementos */
+    margin-top: 20px;
+    /* Espacio arriba */
 }
 
 /* Cada elemento de contacto */
-.contact-item {
-    text-align: center; /* Centrado */
-    padding: 20px; /* Espacio interno */
-    background: #f8f8f8; /* Fondo gris claro */
-    border-radius: 5px; /* Esquinas redondeadas */
+.elemento-contacto {
+    text-align: center;
+    /* Centrado */
+    padding: 20px;
+    /* Espacio interno */
+    background: #f8f8f8;
+    /* Fondo gris claro */
+    border-radius: 5px;
+    /* Esquinas redondeadas */
 }
 
 /* El título de cada contacto */
-.contact-item h3 {
-    color: #3a2d71; /* Color morado */
-    margin-bottom: 10px; /* Espacio abajo */
+.elemento-contacto h3 {
+    color: #3a2d71;
+    /* Color morado */
+    margin-bottom: 10px;
+    /* Espacio abajo */
 }
 
 /* La información de contacto */
-.contact-item p {
-    color: #666; /* Color gris */
-    margin: 0; /* Sin espacios */
+.elemento-contacto p {
+    color: #666;
+    /* Color gris */
+    margin: 0;
+    /* Sin espacios */
 }
 
 /* ===== FORMULARIO DE CONTACTO ===== */
 /* El contenedor del formulario */
-.contact-form-container {
-    margin-top: 30px; /* Espacio arriba */
-    padding: 30px; /* Espacio interno */
-    background: #f8f8f8; /* Fondo gris claro */
-    border-radius: 8px; /* Esquinas redondeadas */
+.contenedor-formulario-contacto {
+    margin-top: 30px;
+    /* Espacio arriba */
+    padding: 30px;
+    /* Espacio interno */
+    background: #f8f8f8;
+    /* Fondo gris claro */
+    border-radius: 8px;
+    /* Esquinas redondeadas */
 }
 
 /* El título del formulario */
-.contact-form-container h3 {
-    color: #3a2d71; /* Color morado */
-    margin-bottom: 20px; /* Espacio abajo */
-    text-align: center; /* Centrado */
+.contenedor-formulario-contacto h3 {
+    color: #3a2d71;
+    /* Color morado */
+    margin-bottom: 20px;
+    /* Espacio abajo */
+    text-align: center;
+    /* Centrado */
 }
 
 /* El formulario */
-.contact-form {
-    max-width: 600px; /* Ancho máximo */
-    margin: 0 auto; /* Centrado */
+.formulario-contacto {
+    max-width: 600px;
+    /* Ancho máximo */
+    margin: 0 auto;
+    /* Centrado */
 }
 
 /* Cada grupo de campos del formulario */
-.form-group {
-    margin-bottom: 20px; /* Espacio abajo */
+.grupo-formulario {
+    margin-bottom: 20px;
+    /* Espacio abajo */
 }
 
 /* Las etiquetas de los campos */
-.form-group label {
-    display: block; /* Una línea por etiqueta */
-    color: #3a2d71; /* Color morado */
-    margin-bottom: 5px; /* Espacio abajo */
-    font-weight: bold; /* Texto en negrita */
+.grupo-formulario label {
+    display: block;
+    /* Una línea por etiqueta */
+    color: #3a2d71;
+    /* Color morado */
+    margin-bottom: 5px;
+    /* Espacio abajo */
+    font-weight: bold;
+    /* Texto en negrita */
 }
 
 /* Los campos de entrada */
-.form-group input,
-.form-group select,
-.form-group textarea {
-    width: 100%; /* Ancho completo */
-    padding: 12px; /* Espacio interno */
-    border: 2px solid #ddd; /* Borde gris */
-    border-radius: 5px; /* Esquinas redondeadas */
-    font-size: 1rem; /* Tamaño de letra */
-    transition: border-color 0.3s; /* Animación suave */
+.grupo-formulario input,
+.grupo-formulario select,
+.grupo-formulario textarea {
+    width: 100%;
+    /* Ancho completo */
+    padding: 12px;
+    /* Espacio interno */
+    border: 2px solid #ddd;
+    /* Borde gris */
+    border-radius: 5px;
+    /* Esquinas redondeadas */
+    font-size: 1rem;
+    /* Tamaño de letra */
+    transition: border-color 0.3s;
+    /* Animación suave */
 }
 
 /* Cuando el campo está enfocado */
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-    outline: none; /* Quita el borde por defecto */
-    border-color: #A08AC0; /* Borde morado claro */
+.grupo-formulario input:focus,
+.grupo-formulario select:focus,
+.grupo-formulario textarea:focus {
+    outline: none;
+    /* Quita el borde por defecto */
+    border-color: #A08AC0;
+    /* Borde morado claro */
 }
 
 /* El botón de enviar */
-.submit-btn {
-    background: #3a2d71; /* Fondo morado */
-    color: white; /* Texto blanco */
-    padding: 15px 30px; /* Espacio interno */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Esquinas redondeadas */
-    font-size: 1.1rem; /* Tamaño de letra */
-    font-weight: bold; /* Texto en negrita */
-    cursor: pointer; /* Cursor de mano */
-    transition: background-color 0.3s; /* Animación suave */
-    width: 100%; /* Ancho completo */
+.boton-enviar {
+    background: #3a2d71;
+    /* Fondo morado */
+    color: white;
+    /* Texto blanco */
+    padding: 15px 30px;
+    /* Espacio interno */
+    border: none;
+    /* Sin borde */
+    border-radius: 5px;
+    /* Esquinas redondeadas */
+    font-size: 1.1rem;
+    /* Tamaño de letra */
+    font-weight: bold;
+    /* Texto en negrita */
+    cursor: pointer;
+    /* Cursor de mano */
+    transition: background-color 0.3s;
+    /* Animación suave */
+    width: 100%;
+    /* Ancho completo */
 }
 
 /* Cuando pasas el mouse sobre el botón */
-.submit-btn:hover {
-    background: #A08AC0; /* Cambia a morado claro */
+.boton-enviar:hover {
+    background: #A08AC0;
+    /* Cambia a morado claro */
 }
 
 /* El mensaje de confirmación */
 .mensaje-enviado {
-    background: #d4edda; /* Fondo verde claro */
-    color: #155724; /* Texto verde oscuro */
-    padding: 15px; /* Espacio interno */
-    border-radius: 5px; /* Esquinas redondeadas */
-    text-align: center; /* Centrado */
-    margin-top: 20px; /* Espacio arriba */
-    border: 1px solid #c3e6cb; /* Borde verde */
+    background: #d4edda;
+    /* Fondo verde claro */
+    color: #155724;
+    /* Texto verde oscuro */
+    padding: 15px;
+    /* Espacio interno */
+    border-radius: 5px;
+    /* Esquinas redondeadas */
+    text-align: center;
+    /* Centrado */
+    margin-top: 20px;
+    /* Espacio arriba */
+    border: 1px solid #c3e6cb;
+    /* Borde verde */
 }
 
 /* ===== BOTÓN DE CONTACTO ===== */
 /* El contenedor del botón de contacto */
-.contact-cta {
-    text-align: center; /* Centrado */
-    margin-top: 30px; /* Espacio arriba */
+.llamada-contacto {
+    text-align: center;
+    /* Centrado */
+    margin-top: 30px;
+    /* Espacio arriba */
 }
 
 /* El botón para ir al formulario */
-.contact-btn {
-    display: inline-block; /* Permite padding y margin */
-    background: #3a2d71; /* Fondo morado */
-    color: white; /* Texto blanco */
-    padding: 15px 30px; /* Espacio interno */
-    text-decoration: none; /* Quita subrayado */
-    border-radius: 5px; /* Esquinas redondeadas */
-    font-size: 1.1rem; /* Tamaño de letra */
-    font-weight: bold; /* Texto en negrita */
-    transition: background-color 0.3s; /* Animación suave */
+.boton-contacto {
+    display: inline-block;
+    /* Permite padding y margin */
+    background: #3a2d71;
+    /* Fondo morado */
+    color: white;
+    /* Texto blanco */
+    padding: 15px 30px;
+    /* Espacio interno */
+    text-decoration: none;
+    /* Quita subrayado */
+    border-radius: 5px;
+    /* Esquinas redondeadas */
+    font-size: 1.1rem;
+    /* Tamaño de letra */
+    font-weight: bold;
+    /* Texto en negrita */
+    transition: background-color 0.3s;
+    /* Animación suave */
 }
 
 /* Cuando pasas el mouse sobre el botón */
-.contact-btn:hover {
-    background: #A08AC0; /* Cambia a morado claro */
+.boton-contacto:hover {
+    background: #A08AC0;
+    /* Cambia a morado claro */
 }
 
 /* ===== SECCIÓN EXTRA DE CONTACTO ===== */
 /* El contenedor de información adicional */
-.contact-extra {
-    margin-top: 40px; /* Espacio arriba */
-    padding: 30px; /* Espacio interno */
-    background: #f8f8f8; /* Fondo gris claro */
-    border-radius: 8px; /* Esquinas redondeadas */
+.contacto-extra {
+    margin-top: 40px;
+    /* Espacio arriba */
+    padding: 30px;
+    /* Espacio interno */
+    background: #f8f8f8;
+    /* Fondo gris claro */
+    border-radius: 8px;
+    /* Esquinas redondeadas */
 }
 
 /* El título de la sección extra */
-.contact-extra h3 {
-    color: #3a2d71; /* Color morado */
-    text-align: center; /* Centrado */
-    margin-bottom: 25px; /* Espacio abajo */
+.contacto-extra h3 {
+    color: #3a2d71;
+    /* Color morado */
+    text-align: center;
+    /* Centrado */
+    margin-bottom: 25px;
+    /* Espacio abajo */
 }
 
 /* El grid de razones para contactar */
-.contact-reasons {
-    display: grid; /* Usa grid para organizar */
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Columnas que se adaptan */
-    gap: 20px; /* Espacio entre elementos */
+.razones-contacto {
+    display: grid;
+    /* Usa grid para organizar */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* Columnas que se adaptan */
+    gap: 20px;
+    /* Espacio entre elementos */
 }
 
 /* Cada razón para contactar */
-.reason-item {
-    background: white; /* Fondo blanco */
-    padding: 20px; /* Espacio interno */
-    border-radius: 5px; /* Esquinas redondeadas */
-    text-align: center; /* Centrado */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra sutil */
+.elemento-razon {
+    background: white;
+    /* Fondo blanco */
+    padding: 20px;
+    /* Espacio interno */
+    border-radius: 5px;
+    /* Esquinas redondeadas */
+    text-align: center;
+    /* Centrado */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil */
 }
 
 /* El título de cada razón */
-.reason-item h4 {
-    color: #3a2d71; /* Color morado */
-    margin-bottom: 10px; /* Espacio abajo */
+.elemento-razon h4 {
+    color: #3a2d71;
+    /* Color morado */
+    margin-bottom: 10px;
+    /* Espacio abajo */
 }
 
 /* La descripción de cada razón */
-.reason-item p {
-    color: #666; /* Color gris */
-    margin: 0; /* Sin espacios */
-    text-align: left; /* Alineado a la izquierda */
+.elemento-razon p {
+    color: #666;
+    /* Color gris */
+    margin: 0;
+    /* Sin espacios */
+    text-align: left;
+    /* Alineado a la izquierda */
 }
 
 /* ===== FOOTER ===== */
 /* El footer principal */
-.footer {
-    background: #3a2d71; /* Fondo morado oscuro */
-    color: white; /* Texto blanco */
-    margin-top: 50px; /* Espacio arriba */
-    padding: 40px 0 20px; /* Espacio interno */
+.pie-pagina {
+    background: #3a2d71;
+    /* Fondo morado oscuro */
+    color: white;
+    /* Texto blanco */
+    margin-top: 50px;
+    /* Espacio arriba */
+    padding: 40px 0 20px;
+    /* Espacio interno */
 }
 
 /* El contenedor del footer */
-.footer-container {
-    max-width: 1200px; /* Ancho máximo */
-    margin: 0 auto; /* Centrado */
-    padding: 0 20px; /* Espacio a los lados */
-    display: grid; /* Usa grid para organizar */
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Columnas que se adaptan */
-    gap: 30px; /* Espacio entre columnas */
+.contenedor-pie {
+    max-width: 1200px;
+    /* Ancho máximo */
+    margin: 0 auto;
+    /* Centrado */
+    padding: 0 20px;
+    /* Espacio a los lados */
+    display: grid;
+    /* Usa grid para organizar */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* Columnas que se adaptan */
+    gap: 30px;
+    /* Espacio entre columnas */
 }
 
 /* Cada sección del footer */
-.footer-section h3 {
-    color: #F6D60D; /* Color amarillo para el título principal */
-    margin-bottom: 15px; /* Espacio abajo */
-    font-size: 1.3rem; /* Tamaño de letra */
+.seccion-pie h3 {
+    color: #F6D60D;
+    /* Color amarillo para el título principal */
+    margin-bottom: 15px;
+    /* Espacio abajo */
+    font-size: 1.3rem;
+    /* Tamaño de letra */
 }
 
-.footer-section h4 {
-    color: #F6D60D; /* Color amarillo para subtítulos */
-    margin-bottom: 15px; /* Espacio abajo */
-    font-size: 1.1rem; /* Tamaño de letra */
+.seccion-pie h4 {
+    color: #F6D60D;
+    /* Color amarillo para subtítulos */
+    margin-bottom: 15px;
+    /* Espacio abajo */
+    font-size: 1.1rem;
+    /* Tamaño de letra */
 }
 
-.footer-section p {
-    color: #ccc; /* Color gris claro */
-    line-height: 1.6; /* Espaciado entre líneas */
-    margin-bottom: 10px; /* Espacio abajo */
+.seccion-pie p {
+    color: #ccc;
+    /* Color gris claro */
+    line-height: 1.6;
+    /* Espaciado entre líneas */
+    margin-bottom: 10px;
+    /* Espacio abajo */
 }
 
 /* Las listas del footer */
-.footer-section ul {
-    list-style: none; /* Quita viñetas */
-    padding: 0; /* Sin padding */
-    margin: 0; /* Sin margin */
+.seccion-pie ul {
+    list-style: none;
+    /* Quita viñetas */
+    padding: 0;
+    /* Sin padding */
+    margin: 0;
+    /* Sin margin */
 }
 
-.footer-section ul li {
-    margin-bottom: 8px; /* Espacio abajo */
+.seccion-pie ul li {
+    margin-bottom: 8px;
+    /* Espacio abajo */
 }
 
-.footer-section ul li a {
-    color: #ccc; /* Color gris claro */
-    text-decoration: none; /* Quita subrayado */
-    transition: color 0.3s; /* Animación suave */
+.seccion-pie ul li a {
+    color: #ccc;
+    /* Color gris claro */
+    text-decoration: none;
+    /* Quita subrayado */
+    transition: color 0.3s;
+    /* Animación suave */
 }
 
-.footer-section ul li a:hover {
-    color: #F6D60D; /* Cambia a amarillo al pasar el mouse */
+.seccion-pie ul li a:hover {
+    color: #F6D60D;
+    /* Cambia a amarillo al pasar el mouse */
 }
 
 /* Los enlaces de redes sociales */
-.social-links {
-    display: flex; /* Pone enlaces en línea */
-    flex-wrap: wrap; /* Permite que se envuelvan */
-    gap: 10px; /* Espacio entre enlaces */
+.enlaces-sociales {
+    display: flex;
+    /* Pone enlaces en línea */
+    flex-wrap: wrap;
+    /* Permite que se envuelvan */
+    gap: 10px;
+    /* Espacio entre enlaces */
 }
 
-.social-link {
-    color: #ccc; /* Color gris claro */
-    text-decoration: none; /* Quita subrayado */
-    padding: 8px 12px; /* Espacio interno */
-    background: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
-    border-radius: 5px; /* Esquinas redondeadas */
-    transition: all 0.3s; /* Animación suave */
-    font-size: 0.9rem; /* Tamaño pequeño */
+.enlace-social {
+    color: #ccc;
+    /* Color gris claro */
+    text-decoration: none;
+    /* Quita subrayado */
+    padding: 8px 12px;
+    /* Espacio interno */
+    background: rgba(255, 255, 255, 0.1);
+    /* Fondo semi-transparente */
+    border-radius: 5px;
+    /* Esquinas redondeadas */
+    transition: all 0.3s;
+    /* Animación suave */
+    font-size: 0.9rem;
+    /* Tamaño pequeño */
 }
 
-.social-link:hover {
-    background: #F6D60D; /* Fondo amarillo al pasar el mouse */
-    color: #3a2d71; /* Texto morado al pasar el mouse */
-    transform: translateY(-2px); /* Se mueve un poco arriba */
+.enlace-social:hover {
+    background: #F6D60D;
+    /* Fondo amarillo al pasar el mouse */
+    color: #3a2d71;
+    /* Texto morado al pasar el mouse */
+    transform: translateY(-2px);
+    /* Se mueve un poco arriba */
 }
 
 /* La parte inferior del footer */
-.footer-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Línea separadora */
-    margin-top: 30px; /* Espacio arriba */
-    padding-top: 20px; /* Espacio arriba */
-    text-align: center; /* Centrado */
+.pie-inferior {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    /* Línea separadora */
+    margin-top: 30px;
+    /* Espacio arriba */
+    padding-top: 20px;
+    /* Espacio arriba */
+    text-align: center;
+    /* Centrado */
 }
 
-.footer-bottom p {
-    color: #ccc; /* Color gris claro */
-    margin: 0; /* Sin espacios */
-    font-size: 0.9rem; /* Tamaño pequeño */
+.pie-inferior p {
+    color: #ccc;
+    /* Color gris claro */
+    margin: 0;
+    /* Sin espacios */
+    font-size: 0.9rem;
+    /* Tamaño pequeño */
 }

@@ -16,67 +16,67 @@
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <div class="nav-container">
-                <div class="nav-logo">
+        <nav class="barra-navegacion">
+            <div class="contenedor-nav">
+                <div class="logo-nav">
                     <figure>
-                        <img src="../images/logo-invert.png" alt="Criticas al Respawn" class="logo-img">
-                        <figcaption class="logo-text">Críticas al Respawn</figcaption>
+                        <img src="../images/logo-invert.png" alt="Criticas al Respawn" class="imagen-logo">
+                        <figcaption class="texto-logo">Críticas al Respawn</figcaption>
                     </figure>
                 </div>
                 
-                <ul class="nav-menu">
-                    <li><a href="index.html" class="nav-link">Inicio</a></li>
-                    <li><a href="index.html#reseñas" class="nav-link">Reseñas</a></li>
-                    <li><a href="index.html#noticias" class="nav-link">Noticias</a></li>
-                    <li><a href="index.html#ranking" class="nav-link">Ranking</a></li>
-                    <li><a href="contacto.html" class="nav-link active">Contacto</a></li>
+                <ul class="menu-nav">
+                    <li><a href="index.html" class="enlace-nav">Inicio</a></li>
+                    <li><a href="index.html#reseñas" class="enlace-nav">Reseñas</a></li>
+                    <li><a href="index.html#noticias" class="enlace-nav">Noticias</a></li>
+                    <li><a href="index.html#ranking" class="enlace-nav">Ranking</a></li>
+                    <li><a href="contacto.html" class="enlace-nav active">Contacto</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     
     <!-- Contenido principal -->
-    <main class="main-content">
+    <main class="contenido-principal">
         <!-- Sección de contacto -->
-        <section class="section">
+        <section class="seccion">
             <h1><b>Contacto</b></h1>
             <p>¿Tienes alguna <i>pregunta</i>, <i>sugerencia</i> o quieres colaborar con nosotros?<br>
             ¡Escríbenos!</p>
             
             <!-- Información de contacto -->
-            <div class="contact-info">
-                <div class="contact-item">
+            <div class="info-contacto">
+                <div class="elemento-contacto">
                     <h3>Email</h3>
                     <p>contacto@criticasalrespawn.com</p>
                 </div>
-                <div class="contact-item">
+                <div class="elemento-contacto">
                     <h3>Redes Sociales</h3>
                     <p>@CriticasAlRespawn</p>
                 </div>
-                <div class="contact-item">
+                <div class="elemento-contacto">
                     <h3>Discord</h3>
                     <p>CriticasAlRespawn#1234</p>
                 </div>
             </div>
 
             <!-- REQUERIMIENTO: Formulario de contacto -->
-            <div class="contact-form-container">
+            <div class="contenedor-formulario-contacto">
                 <h2>Envíanos un mensaje</h2>
                 <!-- REQUERIMIENTO: Etiqueta <form> con validación HTML5 -->
-                <form id="contactForm" class="contact-form">
+                <form id="formularioContacto" class="formulario-contacto">
                     <!-- REQUERIMIENTO: Campos del formulario con validación HTML5 (required) -->
-                    <div class="form-group">
+                    <div class="grupo-formulario">
                         <label for="nombre">Nombre:</label>
                         <input type="text" id="nombre" name="nombre" required>
                     </div>
                     
-                    <div class="form-group">
+                    <div class="grupo-formulario">
                         <label for="email">Email:</label>
                         <input type="email" id="email" name="email" required>
                     </div>
                     
-                    <div class="form-group">
+                    <div class="grupo-formulario">
                         <label for="asunto">Asunto:</label>
                         <select id="asunto" name="asunto" required>
                             <option value="">Selecciona un asunto</option>
@@ -88,12 +88,12 @@
                         </select>
                     </div>
                     
-                    <div class="form-group">
+                    <div class="grupo-formulario">
                         <label for="mensaje">Mensaje:</label>
                         <textarea id="mensaje" name="mensaje" rows="6" required placeholder="Escribe tu mensaje aquí..."></textarea>
                     </div>
                     
-                    <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                    <button type="submit" class="boton-enviar">Enviar Mensaje</button>
                 </form>
                 
                 <div id="mensajeEnviado" class="mensaje-enviado" style="display: none;">
@@ -102,18 +102,18 @@
             </div>
 
             <!-- Información adicional -->
-            <div class="contact-extra">
+            <div class="contacto-extra">
                 <h3>¿Por qué contactarnos?</h3>
-                <div class="contact-reasons">
-                    <div class="reason-item">
+                <div class="razones-contacto">
+                    <div class="elemento-razon">
                         <h4>Solicitar Reseña</h4>
                         <p>¿Tienes un juego que te gustaría que reseñemos? Cuéntanos sobre él.</p>
                     </div>
-                    <div class="reason-item">
+                    <div class="elemento-razon">
                         <h4>Colaboración</h4>
                         <p>¿Eres desarrollador o tienes un proyecto interesante? Hablemos.</p>
                     </div>
-                    <div class="reason-item">
+                    <div class="elemento-razon">
                         <h4>Sugerencias</h4>
                         <p>¿Cómo podemos mejorar nuestro contenido? Tu opinión es importante.</p>
                     </div>
@@ -123,14 +123,14 @@
     </main>
     
     <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-section">
+    <footer class="pie-pagina">
+        <div class="contenedor-pie">
+            <div class="seccion-pie">
                 <h3>Críticas al Respawn</h3>
                 <p>Tu fuente confiable de reseñas de videojuegos. Descubre los mejores juegos y mantente al día con las últimas noticias del mundo gaming.</p>
             </div>
             
-            <div class="footer-section">
+            <div class="seccion-pie">
                 <h4>Enlaces Rápidos</h4>
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
@@ -141,18 +141,18 @@
                 </ul>
             </div>
             
-            <div class="footer-section">
+            <div class="seccion-pie">
                 <h4>Redes Sociales</h4>
-                <div class="social-links">
-                    <a href="#" class="social-link">Email</a>
-                    <a href="#" class="social-link">Twitter</a>
-                    <a href="#" class="social-link">Facebook</a>
-                    <a href="#" class="social-link">Instagram</a>
-                    <a href="#" class="social-link">Discord</a>
+                <div class="enlaces-sociales">
+                    <a href="#" class="enlace-social">Email</a>
+                    <a href="#" class="enlace-social">Twitter</a>
+                    <a href="#" class="enlace-social">Facebook</a>
+                    <a href="#" class="enlace-social">Instagram</a>
+                    <a href="#" class="enlace-social">Discord</a>
                 </div>
             </div>
             
-            <div class="footer-section">
+            <div class="seccion-pie">
                 <h4>Contacto</h4>
                 <p>contacto@criticasalrespawn.com</p>
                 <p>CriticasAlRespawn#1234</p>
@@ -160,7 +160,7 @@
             </div>
         </div>
         
-        <div class="footer-bottom">
+        <div class="pie-inferior">
             <p>&copy; 2025 Críticas al Respawn. Todos los derechos reservados.</p>
         </div>
     </footer>

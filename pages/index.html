@@ -21,31 +21,31 @@
 <body>
     <!-- REQUERIMIENTO: Etiquetas semánticas <header> y <nav> -->
     <header>
-        <nav class="navbar">
-            <div class="nav-container">
-                <div class="nav-logo">
+        <nav class="barra-navegacion">
+            <div class="contenedor-nav">
+                <div class="logo-nav">
                     <!-- REQUERIMIENTO: Etiquetas semánticas <figure> y <figcaption> -->
                     <figure>
-                        <img src="../images/logo-invert.png" alt="Criticas al Respawn" class="logo-img">
-                        <figcaption class="logo-text">Críticas al Respawn</figcaption>
+                        <img src="../images/logo-invert.png" alt="Criticas al Respawn" class="imagen-logo">
+                        <figcaption class="texto-logo">Críticas al Respawn</figcaption>
                     </figure>
                 </div>
 
-                <ul class="nav-menu">
-                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
-                    <li><a href="#reseñas" class="nav-link">Reseñas</a></li>
-                    <li><a href="#noticias" class="nav-link">Noticias</a></li>
-                    <li><a href="#ranking" class="nav-link">Ranking</a></li>
-                    <li><a href="../pages/contacto.html" class="nav-link">Contacto</a></li>
+                <ul class="menu-nav">
+                    <li><a href="#inicio" class="enlace-nav">Inicio</a></li>
+                    <li><a href="#reseñas" class="enlace-nav">Reseñas</a></li>
+                    <li><a href="#noticias" class="enlace-nav">Noticias</a></li>
+                    <li><a href="#ranking" class="enlace-nav">Ranking</a></li>
+                    <li><a href="../pages/contacto.html" class="enlace-nav">Contacto</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
     <!-- REQUERIMIENTO: Etiqueta semántica <main> -->
-    <main class="main-content">
+    <main class="contenido-principal">
         <!-- REQUERIMIENTO: Etiqueta semántica <section> -->
-        <section id="inicio" class="section">
+        <section id="inicio" class="seccion">
             <!-- REQUERIMIENTO: Etiquetas <h1>, <p>, <b>, <i>, <br> -->
             <h1>Bienvenido a <b>Críticas al Respawn</b></h1>
             <p>Tu fuente <i>confiable</i> de reseñas de videojuegos<br>
@@ -53,24 +53,24 @@
         </section>
 
         <!-- Sección Reseñas -->
-        <section id="reseñas" class="section">
+        <section id="reseñas" class="seccion">
             <h2>Últimas Reseñas</h2>
-            <div class="review-grid">
+            <div class="grilla-reseñas">
                 <!-- REQUERIMIENTO: Etiqueta semántica <article> -->
-                <article class="review-card">
+                <article class="tarjeta-reseña">
                     <h3><b>Cyberpunk 2077</b></h3>
                     <p>Un mundo abierto <i>impresionante</i> con una narrativa envolvente.</p>
-                    <div class="rating">★★★★☆</div>
+                    <div class="calificacion">★★★★☆</div>
                 </article>
-                <article class="review-card">
+                <article class="tarjeta-reseña">
                     <h3><b>Elden Ring</b></h3>
                     <p>Una <i>obra maestra</i> de FromSoftware que redefine el género souls.</p>
-                    <div class="rating">★★★★★</div>
+                    <div class="calificacion">★★★★★</div>
                 </article>
-                <article class="review-card">
+                <article class="tarjeta-reseña">
                     <h3><b>God of War Ragnarök</b></h3>
                     <p>Una secuela <i>épica</i> que supera todas las expectativas.</p>
-                    <div class="rating">★★★★★</div>
+                    <div class="calificacion">★★★★★</div>
                 </article>
             </div>
             <h3 style="margin-top:32px;">¿Cómo enviar tu propia reseña?</h3>
@@ -84,23 +84,23 @@
         </section>
 
         <!-- Sección Noticias -->
-        <section id="noticias" class="section">
+        <section id="noticias" class="seccion">
             <h2>Noticias Gaming</h2>
-            <div class="news-list">
-                <article class="news-item">
+            <div class="lista-noticias">
+                <article class="elemento-noticia">
                     <h3><b>Nuevo trailer de The Legend of Zelda: Tears of the Kingdom</b></h3>
                     <p>Nintendo revela <i>nuevas mecánicas</i> y detalles del próximo juego.</p>
-                    <time class="date">15 de Marzo, 2024</time>
+                    <time class="fecha">15 de Marzo, 2024</time>
                 </article>
-                <article class="news-item">
+                <article class="elemento-noticia">
                     <h3><b>PlayStation 5 Pro confirmado para 2024</b></h3>
                     <p>Sony anuncia <i>oficialmente</i> la nueva consola con mejoras significativas.</p>
-                    <time class="date">12 de Marzo, 2024</time>
+                    <time class="fecha">12 de Marzo, 2024</time>
                 </article>
-                <article class="news-item">
+                <article class="elemento-noticia">
                     <h3><b>Xbox Game Pass añade 10 nuevos juegos</b></h3>
                     <p>Microsoft expande su catálogo con títulos <i>indie</i> y <i>AAA</i>.</p>
-                    <time class="date">10 de Marzo, 2024</time>
+                    <time class="fecha">10 de Marzo, 2024</time>
                 </article>
             </div>
         </section>
@@ -110,11 +110,11 @@
         </section>
 
         <!-- Sección Ranking -->
-        <section id="ranking" class="section">
+        <section id="ranking" class="seccion">
             <h2>Top 10 Juegos por Categoría 2024</h2>
             <div style="overflow-x:auto;">
                 <!-- REQUERIMIENTO: Etiqueta <table> (tabla de rankings) -->
-                <table class="comparative-table" border="1" cellpadding="6" cellspacing="0"
+                <table class="tabla-comparativa" border="1" cellpadding="6" cellspacing="0"
                     style="width:100%; background:#fff; border-radius:10px; border-collapse:collapse;">
                     <thead style="background:#2d2573; color:#fff;">
                         <tr>
@@ -270,43 +270,43 @@
         </section>
 
         <!-- Sección Contacto -->
-        <section id="contacto" class="section">
+        <section id="contacto" class="seccion">
             <h2>Contacto</h2>
             <p>¿Quieres ponerte en contacto con nosotros? Visita nuestra página de contacto.</p>
 
             <!-- Información de contacto -->
-            <div class="contact-info">
-                <div class="contact-item">
+            <div class="info-contacto">
+                <div class="elemento-contacto">
                     <h3>Email</h3>
                     <p>contacto@criticasalrespawn.com</p>
                 </div>
-                <div class="contact-item">
+                <div class="elemento-contacto">
                     <h3>Redes Sociales</h3>
                     <p>@CriticasAlRespawn</p>
                 </div>
-                <div class="contact-item">
+                <div class="elemento-contacto">
                     <h3>Discord</h3>
                     <p>CriticasAlRespawn#1234</p>
                 </div>
             </div>
 
             <!-- Botón para ir al formulario -->
-            <div class="contact-cta">
-                <a href="../pages/contacto.html" class="contact-btn">Ir al Formulario de Contacto</a>
+            <div class="llamada-contacto">
+                <a href="../pages/contacto.html" class="boton-contacto">Ir al Formulario de Contacto</a>
             </div>
         </section>
     </main>
 
     <!-- REQUERIMIENTO: Etiqueta semántica <footer> -->
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-section">
+    <footer class="pie-pagina">
+        <div class="contenedor-pie">
+            <div class="seccion-pie">
                 <h3>Críticas al Respawn</h3>
                 <p>Tu fuente confiable de reseñas de videojuegos. Descubre los mejores juegos y mantente al día con las
                     últimas noticias del mundo gaming.</p>
             </div>
 
-            <div class="footer-section">
+            <div class="seccion-pie">
                 <h4>Enlaces Rápidos</h4>
                 <ul>
                     <li><a href="#inicio">Inicio</a></li>
@@ -317,18 +317,18 @@
                 </ul>
             </div>
 
-            <div class="footer-section">
+            <div class="seccion-pie">
                 <h4>Redes Sociales</h4>
-                <div class="social-links">
-                    <a href="#" class="social-link">Email</a>
-                    <a href="#" class="social-link">Twitter</a>
-                    <a href="#" class="social-link">Facebook</a>
-                    <a href="#" class="social-link">Instagram</a>
-                    <a href="#" class="social-link">Discord</a>
+                <div class="enlaces-sociales">
+                    <a href="#" class="enlace-social">Email</a>
+                    <a href="#" class="enlace-social">Twitter</a>
+                    <a href="#" class="enlace-social">Facebook</a>
+                    <a href="#" class="enlace-social">Instagram</a>
+                    <a href="#" class="enlace-social">Discord</a>
                 </div>
             </div>
 
-            <div class="footer-section">
+            <div class="seccion-pie">
                 <h4>Contacto</h4>
                 <p>contacto@criticasalrespawn.com</p>
                 <p>CriticasAlRespawn#1234</p>
@@ -336,7 +336,7 @@
             </div>
         </div>
 
-        <div class="footer-bottom">
+        <div class="pie-inferior">
             <p>&copy; 2025 Críticas al Respawn. Todos los derechos reservados.</p>
         </div>
     </footer>
